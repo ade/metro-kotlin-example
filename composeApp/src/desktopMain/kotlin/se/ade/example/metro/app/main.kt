@@ -1,4 +1,4 @@
-package se.ade.example.metro.metro_example
+package se.ade.example.metro.app
 
 import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.application

@@ -1,4 +1,4 @@
-package se.ade.example.metro.metro_example
+package se.ade.example.metro.app
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.Image
@@ -20,7 +20,7 @@ import metro_example.composeapp.generated.resources.compose_multiplatform
 
 @Composable
 @Preview
-fun App() {
+fun App(msg: String) {
 	MaterialTheme {
 		var showContent by remember { mutableStateOf(false) }
 		Column(
@@ -30,7 +30,7 @@ fun App() {
 			horizontalAlignment = Alignment.CenterHorizontally,
 		) {
 			Button(onClick = { showContent = !showContent }) {
-				Text("Click me!")
+				Text(msg)
 			}
 			AnimatedVisibility(showContent) {
 				val greeting = remember { Greeting().greet() }

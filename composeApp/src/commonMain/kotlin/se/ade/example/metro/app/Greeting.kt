@@ -1,4 +1,4 @@
-package se.ade.example.metro.metro_example
+package se.ade.example.metro.app
 
 class Greeting {
 	private val platform = getPlatform()

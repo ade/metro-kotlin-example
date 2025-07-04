@@ -7,10 +7,11 @@
             android:label="@string/app_name"
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
-            android:theme="@android:style/Theme.Material.Light.NoActionBar">
+            android:theme="@android:style/Theme.Material.Light.NoActionBar"
+            android:name="se.ade.example.metro.app.Application">
         <activity
                 android:exported="true"
-                android:name=".MainActivity">
+                android:name="se.ade.example.metro.app.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 

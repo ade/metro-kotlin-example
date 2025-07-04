@@ -8,6 +8,7 @@ plugins {
 	alias(libs.plugins.composeMultiplatform)
 	alias(libs.plugins.composeCompiler)
 	alias(libs.plugins.composeHotReload)
+	alias(libs.plugins.metro)
 }
 
 kotlin {
@@ -48,7 +49,7 @@ kotlin {
 }
 
 android {
-	namespace = "se.ade.example.metro.metro_example"
+	namespace = "se.ade.example.metro.app"
 	compileSdk = libs.versions.android.compileSdk.get().toInt()
 
 	defaultConfig {
