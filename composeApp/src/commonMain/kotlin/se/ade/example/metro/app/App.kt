@@ -20,7 +20,7 @@ import metro_example.composeapp.generated.resources.compose_multiplatform
 
 @Composable
 @Preview
-fun App(msg: String) {
+fun App(msg: String, metroMsg: String) {
 	MaterialTheme {
 		var showContent by remember { mutableStateOf(false) }
 		Column(
@@ -36,7 +36,8 @@ fun App(msg: String) {
 				val greeting = remember { Greeting().greet() }
 				Column(Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
 					Image(painterResource(Res.drawable.compose_multiplatform), null)
-					Text("Compose: $greeting")
+					Text("Compose: $greeting\n" +
+							"Metro: $metroMsg")
 				}
 			}
 		}

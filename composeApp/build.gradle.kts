@@ -29,6 +29,9 @@ kotlin {
 			implementation(libs.androidx.activity.compose)
 		}
 		commonMain.dependencies {
+			implementation(project(":shared:shared-api"))
+			implementation(project(":shared:shared-base"))
+			implementation(project(":shared:shared-repos"))
 			implementation(compose.runtime)
 			implementation(compose.foundation)
 			implementation(compose.material3)

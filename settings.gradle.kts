@@ -32,3 +32,6 @@ plugins {
 }
 
 include(":composeApp")
+include(":shared:shared-api")
+include(":shared:shared-base")
+include(":shared:shared-repos")
